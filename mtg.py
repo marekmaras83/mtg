@@ -12,7 +12,7 @@ MTG_SETS = {"dtk", "ddo", "m15", "m14", "m13", "m12", "ktk", "m11", "bfz", "m10"
             "ddj", "rav", "10e", "ths", "tsp", "lrw", "bng", "avr", "mma", "roe", "con", "ala", "ddl",
             "mbs", "csp", "som", "mor", "hop", "wwk", "zen", "frf", "ahk"}
 
-ODS_TO_MTG_PROPERTY_TRANSLATION_MAP = {
+MY_TO_MTG_PROPERTY_TRANSLATION_MAP = {
     "name": "name",
     "colors": "colors",
     "mana cost": "mana_cost",
@@ -39,16 +39,16 @@ SPECIFIC_PROPERTIES_PER_TYPE = {
 
 
 def csv_header_check(ods_columns):
-    for column_name in ODS_TO_MTG_PROPERTY_TRANSLATION_MAP.keys():
+    for column_name in MY_TO_MTG_PROPERTY_TRANSLATION_MAP.keys():
         assert column_name in ods_columns, f"input csv does not have column named: '{column_name}'"
 
     for column_name in ods_columns:
-        if column_name not in ODS_TO_MTG_PROPERTY_TRANSLATION_MAP.keys():
+        if column_name not in MY_TO_MTG_PROPERTY_TRANSLATION_MAP.keys():
             print(f"additional property: {column_name} found")
 
 
-def get_ods_property_from_mtg_card(card, ods_property):
-    mtg_value = getattr(card, ODS_TO_MTG_PROPERTY_TRANSLATION_MAP[ods_property])
+def get_my_property_from_mtg_card(card, ods_property):
+    mtg_value = getattr(card, MY_TO_MTG_PROPERTY_TRANSLATION_MAP[ods_property])
     if not mtg_value:
         return ''
     elif type(mtg_value) == list:
@@ -62,9 +62,9 @@ def update_all_properties(card_record):
         set=card_record["short set"].lower()).where(
         number=card_record["id in set"]).all()[0]
 
-    for ods_property in ODS_TO_MTG_PROPERTY_TRANSLATION_MAP.keys():
-        if card_record[ods_property] == '':
-            card_record[ods_property] = get_ods_property_from_mtg_card(card_remote_data, ods_property)
+    for my_property in MY_TO_MTG_PROPERTY_TRANSLATION_MAP.keys():
+        if card_record[my_property] == '':
+            card_record[my_property] = get_my_property_from_mtg_card(card_remote_data, my_property)
 
 # cards = Card.where(set='frf').where(number=2).all()
 
