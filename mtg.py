@@ -1,9 +1,11 @@
+import csv
 import subprocess
 
-import pyexcel_ods3
-import json
 from mtgsdk import Card
-from playsound import playsound
+
+ROOT_FOLDER = "/home/sztylet/Desktop/mtg/"
+DATABASE_PATH = ROOT_FOLDER + 'mtg_collection.csv'
+NEW_DATABASE_PATH = ROOT_FOLDER + 'mtg_collection_update.csv'
 
 MTG_SETS = {"dtk", "ddo", "m15", "m14", "m13", "m12", "ktk", "m11", "bfz", "m10", "ori", "c14", "exo (ex)",
             "uds (cg)", "jou", "rtr", "gpt", "usg (uz)", "chk", "ulg (gu)", "dka", "nph", "isd", "mrd", "dgm",
@@ -35,10 +37,10 @@ SPECIFIC_PROPERTIES_PER_TYPE = {
     "Land": []
 }
 
-def ods_header_check(ods_columns):
+
+def csv_header_check(ods_columns):
     for column_name in ODS_TO_MTG_PROPERTY_TRANSLATION_MAP.keys():
-        if column_name not in ods_columns:
-            ods_columns.append(column_name)
+        assert column_name in ods_columns, f"input csv does not have column named: '{column_name}'"
 
     for column_name in ods_columns:
         if column_name not in ODS_TO_MTG_PROPERTY_TRANSLATION_MAP.keys():
@@ -55,36 +57,32 @@ def get_ods_property_from_mtg_card(card, ods_property):
         return mtg_value
 
 
-def update_all_properties(ods_columns, card_record):
+def update_all_properties(card_record):
     card_remote_data = Card.where(
-        set=card_record[ods_columns.index("short set")].lower()).where(
-        number=card_record[ods_columns.index("id in set")]).all()[0]
+        set=card_record["short set"].lower()).where(
+        number=card_record["id in set"]).all()[0]
 
-    for ods_property, sdk_property in ODS_TO_MTG_PROPERTY_TRANSLATION_MAP.items():
-        property_ods_index = ods_columns.index(ods_property)
-        if card_record[property_ods_index] == '':
-            card_record[property_ods_index] = get_ods_property_from_mtg_card(card_remote_data, ods_property)
+    for ods_property in ODS_TO_MTG_PROPERTY_TRANSLATION_MAP.keys():
+        if card_record[ods_property] == '':
+            card_record[ods_property] = get_ods_property_from_mtg_card(card_remote_data, ods_property)
 
 # cards = Card.where(set='frf').where(number=2).all()
 
-NEW_ODS_PATH = '/home/sztylet/Desktop/mtg_collection.ods'
-ODS_PATH = '/home/sztylet/Desktop/mtg_collection_update.ods'
 
-ods_data = pyexcel_ods3.get_data(ODS_PATH)
+with open(DATABASE_PATH, newline='') as csv_in, open(NEW_DATABASE_PATH, newline='', mode="w+") as csv_out:
+    card_database_reader = csv.DictReader(csv_in)
+    card_properties = card_database_reader.fieldnames
+    csv_header_check(card_properties)
 
-ods_columns = ods_data["Sheet1"][0]
-ods_header_check(ods_columns)
+    database_update_writer = csv.DictWriter(csv_out, fieldnames=card_properties)
+    database_update_writer.writeheader()
 
-for card_record in ods_data["Sheet1"]:
-    if card_record:
-        if len(card_record) < len(ods_columns):
-            card_record.extend([''] * (len(ods_columns) - len(card_record)) )
-
+    for card_record in card_database_reader:
         for mandatory_property in MANDATORY_PROPERTIES_FOR_ALL:
-            if not card_record[ods_columns.index(mandatory_property)]:
-                update_all_properties(ods_columns, card_record)
+            if not card_record[mandatory_property]:
+                update_all_properties(card_record)
                 break
         print(card_record)
+        database_update_writer.writerow(card_record)
 
-pyexcel_ods3.save_data(NEW_ODS_PATH, ods_data)
 subprocess.run("cvlc /home/sztylet/Downloads/old-car-engine_daniel_simion.mp3", shell=True)
