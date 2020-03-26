@@ -1,16 +1,12 @@
 import csv
 import subprocess
 
+import stopit
 from mtgsdk import Card
 
 ROOT_FOLDER = "/home/sztylet/Desktop/mtg/"
-DATABASE_PATH = ROOT_FOLDER + 'mtg_collection.csv'
-NEW_DATABASE_PATH = ROOT_FOLDER + 'mtg_collection_update.csv'
-
-MTG_SETS = {"dtk", "ddo", "m15", "m14", "m13", "m12", "ktk", "m11", "bfz", "m10", "ori", "c14", "exo (ex)",
-            "uds (cg)", "jou", "rtr", "gpt", "usg (uz)", "chk", "ulg (gu)", "dka", "nph", "isd", "mrd", "dgm",
-            "ddj", "rav", "10e", "ths", "tsp", "lrw", "bng", "avr", "mma", "roe", "con", "ala", "ddl",
-            "mbs", "csp", "som", "mor", "hop", "wwk", "zen", "frf", "ahk"}
+NEW_DATABASE_PATH = ROOT_FOLDER + 'mtg_collection.csv'
+DATABASE_PATH = ROOT_FOLDER + 'mtg_collection_update.csv'
 
 MY_TO_MTG_PROPERTY_TRANSLATION_MAP = {
     "name": "name",
@@ -58,9 +54,17 @@ def get_my_property_from_mtg_card(card, ods_property):
 
 
 def update_all_properties(card_record):
-    card_remote_data = Card.where(
-        set=card_record["short set"].lower()).where(
-        number=card_record["id in set"]).all()[0]
+    try:
+        with stopit.ThreadingTimeout(seconds=20, swallow_exc=False):
+            card_remote_data = Card.where(
+                set=card_record["short set"].lower()).where(
+                number=card_record["id in set"]).all()[0]
+    except stopit.TimeoutException:
+        print(f"ERROR: Timeout on: {card_record}")
+        return
+    except IndexError:
+        print(f"ERROR: not found in MTG database: {card_record}")
+        return
 
     for my_property in MY_TO_MTG_PROPERTY_TRANSLATION_MAP.keys():
         if card_record[my_property] == '':
