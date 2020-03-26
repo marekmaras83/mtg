@@ -1096,38 +1096,192 @@ Plated Geopede,Zendikar,ZEN,141,5,{1}{R},['Red'],['Creature'],['Insect'],2,,Comm
 Landfall — Whenever a land enters the battlefield under your control, Plated Geopede gets +2/+2 until end of turn.","""Kor armorers buy the scales and claws. Elf oracles buy the rest."" —Nablus, North Hada trapper",
 Khalni Heart Expedition,Zendikar,ZEN,167,1,{1}{G},['Green'],['Enchantment'],,2,,Common,,,186320,"Landfall — Whenever a land enters the battlefield under your control, you may put a quest counter on Khalni Heart Expedition.
 Remove three quest counters from Khalni Heart Expedition and sacrifice it: Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.",,
-,,ROE,195,2,,,,,,,,,,,,,
-,,ROE,199,1,,,,,,,,,,,,,
-,,ROE,147,1,,,,,,,,,,,,,
-,,ULG,7,2,,,,,,,,,,,,,
-,,EXO,14,1,,,,,,,,,,,,,
-,,DST,46,2,,,,,,,,,,,,,
-,,SOM,186,1,,,,,,,,,,,,,
-,,HOP,76,1,,,,,,,,,,,,,
-,,WWK,62,1,,,,,,,,,,,,,
-,,WWK,4,1,,,,,,,,,,,,,
-,,MOR,28,1,,,,,,,,,,,,,
-,,MOR,10,1,,,,,,,,,,,,,
-,,MOR,54,1,,,,,,,,,,,,,
-,,MRD,263,1,,,,,,,,,,,,,
-,,DDG,4,1,,,,,,,,,,,,,
-,,DDG,3,1,,,,,,,,,,,,,
-,,PLC,77,1,,,,,,,,,,,,,
-,,PLC,20,1,,,,,,,,,,,,,
-,,GPT,8,1,,,,,,,,,,,,,
-,,UDS,25,1,,,,,,,,,,,,,
-,,EVE,27,1,,,,,,,,,,,,,
-,,9ED,284,1,,,,,,,,,,,,,
-,,ODY,30,2,,,,,,,,,,,,,
-,,ONS,246,1,,,,,,,,,,,,,
-,,MMQ,346,1,,,,,,,,,,,,,
-,,MMQ,344,1,,,,,,,,,,,,,
-,,9ED,355,1,,,,,,,,,,,,,
-,,9ED,332,1,,,,,,,,,,,,,
-,,TSP,289,1,,,,,,,,,,,,,
-,,4ED,264,1,,,,,,,,,,,,,
-,,DDG,79,1,,,,,,,,,,,,,
-,,5ED,438,1,,,,,,,,,,,,,
-,,5ED,434,1,,,,,,,,,,,,,
-,,5ED,435,1,,,,,,,,,,,,,
-,,5ED,436,1,,,,,,,,,,,,,
+Living Destiny,Rise of the Eldrazi,ROE,195,2,{3}{G},['Green'],['Instant'],,4,,Common,,,193489,"As an additional cost to cast this spell, reveal a creature card from your hand.
+You gain life equal to the revealed card's converted mana cost.","""That our enemies are great only brings us greater hope.""",
+Naturalize,Rise of the Eldrazi,ROE,199,1,{1}{G},['Green'],['Instant'],,2,,Common,,,193439,Destroy target artifact or enchantment.,"""The scholars wept when we destroyed the hedron. I had no such pity. What would this world be like had we done so sooner?"" —The War Diaries",
+Goblin Arsonist,Rise of the Eldrazi,ROE,147,1,{R},['Red'],['Creature'],"['Goblin', 'Shaman']",1,,Common,1,1,194902,"When Goblin Arsonist dies, you may have it deal 1 damage to any target.",With great power comes great risk of getting yourself killed.,
+Erase,Urza's Legacy,ULG,7,2,{W},['White'],['Instant'],,1,,Common,,,12941,Exile target enchantment.,Perception is more pleasing than truth.,
+Pegasus Stampede,Exodus,EXO,14,1,{1}{W},['White'],['Sorcery'],,2,,Uncommon,,,6044,"Buyback—Sacrifice a land. (You may sacrifice a land in addition to any other costs as you cast this spell. If you do, put this card into your hand as it resolves.)
+Create a 1/1 white Pegasus creature token with flying.",,
+Hunger of the Nim,Darksteel,DST,46,2,{1}{B},['Black'],['Sorcery'],,2,,Common,,,46088,Target creature gets +1/+0 until end of turn for each artifact you control.,"Their pain is so great, they can't help but share it with others.",
+Neurok Replica,Scars of Mirrodin,SOM,186,1,{3},,"['Artifact', 'Creature']",['Wizard'],3,,Common,4,1,209039,"{1}{U}, Sacrifice Neurok Replica: Return target creature to its owner's hand.",All the curiosity of the Neurok with only a trace of their duplicity.,
+Rampant Growth,Planechase,HOP,76,1,{1}{G},['Green'],['Sorcery'],,2,,Common,,,205350,Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.,Nature grows solutions to its problems.,
+Pulse Tracker,Worldwake,WWK,62,1,{B},['Black'],['Creature'],"['Vampire', 'Rogue']",1,,Common,1,1,197154,"Whenever Pulse Tracker attacks, each opponent loses 1 life.","Pulse trackers terrorize adventurers, driving them through the jungle toward certain death at the gates of Malakir.",
+Battle Hurda,Worldwake,WWK,4,1,{4}{W},['White'],['Creature'],['Giant'],5,,Common,3,3,198394,First strike,"""Murasan hurdas were too aggressive to tolerate a harness, so we put them on guard duty. Now the bandits can't get within spitting distance of us."" —Bruse Tarl, Goma Fada nomad",
+Weight of Conscience,Morningtide,MOR,28,1,{1}{W},['White'],['Enchantment'],['Aura'],2,,Common,,,152737,"Enchant creature
+Enchanted creature can't attack.
+Tap two untapped creatures you control that share a creature type: Exile enchanted creature.",Sometimes the weight of the world on your shoulders is a literal one.,
+Forfend,Morningtide,MOR,10,1,{1}{W},['White'],['Instant'],,2,,Common,,,157431,Prevent all damage that would be dealt to creatures this turn.,"""Suddenly there stood a fortress protecting the clachan, its walls hewn of valor and mortared with honor."" —Clachan Tales",
+Thieves' Fortune,Morningtide,MOR,54,1,{2}{U},['Blue'],"['Tribal', 'Instant']",['Rogue'],3,,Uncommon,,,152815,"Prowl {U} (You may cast this for its prowl cost if you dealt combat damage to a player this turn with a Rogue.)
+Look at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.",,
+Titanium Golem,Mirrodin,MRD,263,1,{5},,"['Artifact', 'Creature']",['Golem'],5,,Common,3,3,48052,{1}{W}: Titanium Golem gains first strike until end of turn.,"Centuries before the first blades of the Razor Fields chimed in the wind, Mirrodin echoed with the golems' footsteps.",
+Knight of Cliffhaven,Duel Decks: Knights vs. Dragons,DDG,4,1,{1}{W},['White'],['Creature'],"['Kor', 'Knight']",2,,Common,2,2,243421,"Level up {3} ({3}: Put a level counter on this. Level up only as a sorcery.)
+LEVEL 1-3
+2/3
+Flying
+LEVEL 4+
+4/4
+Flying, vigilance",,
+Lionheart Maverick,Duel Decks: Knights vs. Dragons,DDG,3,1,{W},['White'],['Creature'],"['Human', 'Knight']",1,,Common,1,1,243420,"Vigilance
+{4}{W}: Lionheart Maverick gets +1/+2 until end of turn.","""Your signet is no symbol of power. It marks only your need for numbers to aid you. What do you do, guild-rat, now that you face my blade alone?""",
+Phantasmagorian,Planar Chaos,PLC,77,1,{5}{B}{B},['Black'],['Creature'],['Horror'],7,,Uncommon,6,6,124472,"When you cast this spell, any player may discard three cards. If a player does, counter Phantasmagorian.
+Discard three cards: Return Phantasmagorian from your graveyard to your hand.",,
+Stormfront Riders,Planar Chaos,PLC,20,1,{4}{W},['White'],['Creature'],"['Human', 'Soldier']",5,,Uncommon,3,4,122412,"Flying
+When Stormfront Riders enters the battlefield, return two creatures you control to their owner's hand.
+Whenever Stormfront Riders or another creature is returned to your hand from the battlefield, create a 1/1 white Soldier creature token.",,
+Guardian's Magemark,Guildpact,GPT,8,1,{2}{W},['White'],['Enchantment'],['Aura'],3,,Common,,,107688,"Flash
+Enchant creature
+Creatures you control that are enchanted get +1/+1.","The soldier moved with fluid poise, his awareness extending far beyond five senses.",
+Wall of Glare,Urza's Destiny,UDS,25,1,{1}{W},['White'],['Creature'],['Wall'],2,,Common,5,0,15120,"Defender (This creature can't attack.)
+Wall of Glare can block any number of creatures.",The blinding barrier served Benalia better than a hundred shields.,
+Oona's Grace,Eventide,EVE,27,1,{2}{U},['Blue'],['Instant'],,3,,Common,,,153475,"Target player draws a card.
+Retrace (You may cast this card from your graveyard by discarding a land card in addition to paying its other costs.)",Oona grants her favored subjects a dream from her own guarded heart.,
+Yavimaya Enchantress,Ninth Edition,9ED,284,1,{2}{G},['Green'],['Creature'],"['Human', 'Druid']",3,,Uncommon,2,2,83341,Yavimaya Enchantress gets +1/+1 for each enchantment on the battlefield.,Her roots connect her to the forest's wishes.,
+Life Burst,Odyssey,ODY,30,2,{1}{W},['White'],['Instant'],,2,,Common,,,29704,"Target player gains 4 life, then gains 4 life for each card named Life Burst in each graveyard.",As uplifting as a mystic's dreams.,
+Barkhide Mauler,Onslaught,ONS,246,1,{4}{G},['Green'],['Creature'],['Beast'],5,,Common,4,4,34196,"Cycling {2} ({2}, Discard this card: Draw a card.)","Anywhere else they would be hunted for their skins, but in Wirewood, they are safe.",
+Mountain,Mercadian Masques,MMQ,346,1,,,['Land'],['Mountain'],,,Common,,,20895,({T}: Add {R}.),,
+Mountain,Mercadian Masques,MMQ,344,1,,,['Land'],['Mountain'],,,Common,,,20893,({T}: Add {R}.),,
+Island,Ninth Edition,9ED,335,1,,,['Land'],['Island'],,,Common,,,83136,({T}: Add {U}.),,
+Plains,Ninth Edition,9ED,332,1,,,['Land'],['Plains'],,,Common,,,83208,({T}: Add {W}.),,
+Island,Time Spiral,TSP,289,1,,,['Land'],['Island'],,,Common,,,118905,({T}: Add {U}.),,
+Nafs Asp,Fourth Edition,4ED,264,1,{G},['Green'],['Creature'],['Snake'],1,,Common,1,1,2231,"Whenever Nafs Asp deals damage to a player, that player loses 1 life at the beginning of their next draw step unless they pay {1} before that draw step.",,
+Mountain,Duel Decks: Knights vs. Dragons,DDG,79,1,,,['Land'],['Mountain'],,,Common,,,243496,({T}: Add {R}.),,
+Swamp,Fifth Edition,5ED,438,1,,,['Land'],['Swamp'],,,Common,,,4167,({T}: Add {B}.),,
+Island,Fifth Edition,5ED,434,1,,,['Land'],['Island'],,,Common,,,4199,({T}: Add {U}.),,
+Island,Fifth Edition,5ED,435,1,,,['Land'],['Island'],,,Common,,,4202,({T}: Add {U}.),,
+Island,Fifth Edition,5ED,436,1,,,['Land'],['Island'],,,Common,,,4200,({T}: Add {U}.),,
+Rugged Highlands,Fate Reforged,FRF,170,1,,,['Land'],,,,Common,,,391908,"Rugged Highlands enters the battlefield tapped.
+When Rugged Highlands enters the battlefield, you gain 1 life.
+{T}: Add {R} or {G}.",,
+Tranquil Cove,Fate Reforged,FRF,174,1,,,['Land'],,,,Common,,,391946,"Tranquil Cove enters the battlefield tapped.
+When Tranquil Cove enters the battlefield, you gain 1 life.
+{T}: Add {W} or {U}.",,
+Plains,Fate Reforged,FRF,176,5,,,['Land'],['Plains'],,,Common,,,391895,({T}: Add {W}.),,
+Plains,Fate Reforged,FRF,177,7,,,['Land'],['Plains'],,,Common,,,391894,({T}: Add {W}.),,
+Island,Fate Reforged,FRF,178,6,,,['Land'],['Island'],,,Common,,,391859,({T}: Add {U}.),,
+Island,Fate Reforged,FRF,179,6,,,['Land'],['Island'],,,Common,,,391860,({T}: Add {U}.),,
+Swamp,Fate Reforged,FRF,180,9,,,['Land'],['Swamp'],,,Common,,,391934,({T}: Add {B}.),,
+Swamp,Fate Reforged,FRF,181,11,,,['Land'],['Swamp'],,,Common,,,391935,({T}: Add {B}.),,
+Mountain,Fate Reforged,FRF,182,6,,,['Land'],['Mountain'],,,Common,,,391885,({T}: Add {R}.),,
+Mountain,Fate Reforged,FRF,183,7,,,['Land'],['Mountain'],,,Common,,,391886,({T}: Add {R}.),,
+Forest,Fate Reforged,FRF,184,6,,,['Land'],['Forest'],,,Common,,,391836,({T}: Add {G}.),,
+Forest,Fate Reforged,FRF,185,3,,,['Land'],['Forest'],,,Common,,,391835,({T}: Add {G}.),,
+Bloodfell Caves,Khans of Tarkir,KTK,229,1,,,['Land'],,,,Common,,,386491,"Bloodfell Caves enters the battlefield tapped.
+When Bloodfell Caves enters the battlefield, you gain 1 life.
+{T}: Add {B} or {R}.",,
+Blossoming Sands,Khans of Tarkir,KTK,231,1,,,['Land'],,,,Common,,,386496,"Blossoming Sands enters the battlefield tapped.
+When Blossoming Sands enters the battlefield, you gain 1 life.
+{T}: Add {G} or {W}.",,
+Mystic Monastery,Khans of Tarkir,KTK,236,2,,,['Land'],,,,Uncommon,,,386614,"Mystic Monastery enters the battlefield tapped.
+{T}: Add {U}, {R}, or {W}.","When asked how many paths reach enlightenment, the monk kicked a heap of sand. ""Count,"" he smiled, ""and then find more grains.""",
+Scoured Barrens,Khans of Tarkir,KTK,242,1,,,['Land'],,,,Common,,,386655,"Scoured Barrens enters the battlefield tapped.
+When Scoured Barrens enters the battlefield, you gain 1 life.
+{T}: Add {W} or {B}.",,
+Swiftwater Cliffs,Khans of Tarkir,KTK,243,1,,,['Land'],,,,Common,,,386689,"Swiftwater Cliffs enters the battlefield tapped.
+When Swiftwater Cliffs enters the battlefield, you gain 1 life.
+{T}: Add {U} or {R}.",,
+Tomb of the Spirit Dragon,Khans of Tarkir,KTK,245,1,,,['Land'],,,,Uncommon,,,386700,"{T}: Add {C}.
+{2}, {T}: You gain 1 life for each colorless creature you control.","""The voice calls me here, yet I see only bones. Is this more dragon trickery?"" —Sarkhan Vol",
+Tranquil Cove,Khans of Tarkir,KTK,246,1,,,['Land'],,,,Common,,,386703,"Tranquil Cove enters the battlefield tapped.
+When Tranquil Cove enters the battlefield, you gain 1 life.
+{T}: Add {W} or {U}.",,
+Wind-Scarred Crag,Khans of Tarkir,KTK,247,2,,,['Land'],,,,Common,,,386723,"Wind-Scarred Crag enters the battlefield tapped.
+When Wind-Scarred Crag enters the battlefield, you gain 1 life.
+{T}: Add {R} or {W}.",,
+Plains,Khans of Tarkir,KTK,250,1,,,['Land'],['Plains'],,,Common,,,386624,({T}: Add {W}.),,
+Plains,Khans of Tarkir,KTK,251,2,,,['Land'],['Plains'],,,Common,,,386625,({T}: Add {W}.),,
+Plains,Khans of Tarkir,KTK,252,3,,,['Land'],['Plains'],,,Common,,,386623,({T}: Add {W}.),,
+Plains,Khans of Tarkir,KTK,253,2,,,['Land'],['Plains'],,,Common,,,386626,({T}: Add {W}.),,
+Island,Khans of Tarkir,KTK,254,2,,,['Land'],['Island'],,,Common,,,386565,({T}: Add {U}.),,
+Island,Khans of Tarkir,KTK,255,2,,,['Land'],['Island'],,,Common,,,386566,({T}: Add {U}.),,
+Island,Khans of Tarkir,KTK,256,2,,,['Land'],['Island'],,,Common,,,386567,({T}: Add {U}.),,
+Island,Khans of Tarkir,KTK,257,2,,,['Land'],['Island'],,,Common,,,386568,({T}: Add {U}.),,
+Mountain,Khans of Tarkir,KTK,262,2,,,['Land'],['Mountain'],,,Common,,,386612,({T}: Add {R}.),,
+Mountain,Khans of Tarkir,KTK,263,3,,,['Land'],['Mountain'],,,Common,,,386611,({T}: Add {R}.),,
+Mountain,Khans of Tarkir,KTK,264,2,,,['Land'],['Mountain'],,,Common,,,386609,({T}: Add {R}.),,
+Mountain,Duel Decks: Heroes vs. Monsters,DDL,36,1,,,['Land'],['Mountain'],,,Common,,,373382,({T}: Add {R}.),,
+Mountain,Duel Decks: Heroes vs. Monsters,DDL,37,1,,,['Land'],['Mountain'],,,Common,,,373346,({T}: Add {R}.),,
+Plains,Duel Decks: Heroes vs. Monsters,DDL,39,3,,,['Land'],['Plains'],,,Common,,,373341,({T}: Add {W}.),,
+Plains,Duel Decks: Heroes vs. Monsters,DDL,40,2,,,['Land'],['Plains'],,,Common,,,373369,({T}: Add {W}.),,
+Plains,Duel Decks: Heroes vs. Monsters,DDL,41,2,,,['Land'],['Plains'],,,Common,,,373386,({T}: Add {W}.),,
+Plains,Duel Decks: Heroes vs. Monsters,DDL,42,2,,,['Land'],['Plains'],,,Common,,,373361,({T}: Add {W}.),,
+Kazandu Refuge,Duel Decks: Heroes vs. Monsters,DDL,71,2,,,['Land'],,,,Uncommon,,,373412,"Kazandu Refuge enters the battlefield tapped.
+When Kazandu Refuge enters the battlefield, you gain 1 life.
+{T}: Add {R} or {G}.",,
+Llanowar Reborn,Duel Decks: Heroes vs. Monsters,DDL,72,2,,,['Land'],,,,Uncommon,,,373368,"Llanowar Reborn enters the battlefield tapped.
+{T}: Add {G}.
+Graft 1 (This land enters the battlefield with a +1/+1 counter on it. Whenever a creature enters the battlefield, you may move a +1/+1 counter from this land onto it.)",,
+"Skarrg, the Rage Pits",Duel Decks: Heroes vs. Monsters,DDL,73,1,,,['Land'],,,,Uncommon,,,373357,"{T}: Add {C}.
+{R}{G}, {T}: Target creature gets +1/+1 and gains trample until end of turn.","""This palace will be our fire-spit, and roasted prince our victory meal. Send in the torch-pigs!"" —Ghut Rak, Gruul guildmage",
+Mountain,Duel Decks: Heroes vs. Monsters,DDL,74,2,,,['Land'],['Mountain'],,,Common,,,373392,({T}: Add {R}.),,
+Mountain,Duel Decks: Heroes vs. Monsters,DDL,75,3,,,['Land'],['Mountain'],,,Common,,,373359,({T}: Add {R}.),,
+Mountain,Duel Decks: Heroes vs. Monsters,DDL,76,1,,,['Land'],['Mountain'],,,Common,,,373403,({T}: Add {R}.),,
+Mountain,Duel Decks: Heroes vs. Monsters,DDL,77,1,,,['Land'],['Mountain'],,,Common,,,373378,({T}: Add {R}.),,
+Forest,Duel Decks: Heroes vs. Monsters,DDL,78,2,,,['Land'],['Forest'],,,Common,,,373349,({T}: Add {G}.),,
+Forest,Duel Decks: Heroes vs. Monsters,DDL,79,1,,,['Land'],['Forest'],,,Common,,,373375,({T}: Add {G}.),,
+Forest,Duel Decks: Heroes vs. Monsters,DDL,80,1,,,['Land'],['Forest'],,,Common,,,373404,({T}: Add {G}.),,
+Plains,Ravnica: City of Guilds,RAV,289,1,,,['Land'],['Plains'],,,Common,,,95105,({T}: Add {W}.),,
+Island,Ravnica: City of Guilds,RAV,292,1,,,['Land'],['Island'],,,Common,,,95107,({T}: Add {U}.),,
+Island,Ravnica: City of Guilds,RAV,293,1,,,['Land'],['Island'],,,Common,,,95100,({T}: Add {U}.),,
+Island,Ravnica: City of Guilds,RAV,294,1,,,['Land'],['Island'],,,Common,,,95113,({T}: Add {U}.),,
+Plains,Magic 2010,M10,230,1,,,['Land'],['Plains'],,,Common,,,191395,({T}: Add {W}.),,
+Plains,Magic 2010,M10,233,1,,,['Land'],['Plains'],,,Common,,,191396,({T}: Add {W}.),,
+Island,Magic 2010,M10,234,1,,,['Land'],['Island'],,,Common,,,191387,({T}: Add {U}.),,
+Island,Magic 2010,M10,235,1,,,['Land'],['Island'],,,Common,,,191389,({T}: Add {U}.),,
+Island,Magic 2010,M10,236,1,,,['Land'],['Island'],,,Common,,,191390,({T}: Add {U}.),,
+Plains,Battle for Zendikar,BFZ,250,1,,,['Land'],['Plains'],,,Common,,,401992,({T}: Add {W}.),,
+Island,Battle for Zendikar,BFZ,256,1,,,['Land'],['Island'],,,Common,,,401923,({T}: Add {U}.),,
+Plains,Magic Origins,ORI,253,1,,,['Land'],['Plains'],,,Common,,,398534,({T}: Add {W}.),,
+Plains,Magic Origins,ORI,254,1,,,['Land'],['Plains'],,,Common,,,398675,({T}: Add {W}.),,
+Plains,Magic Origins,ORI,255,4,,,['Land'],['Plains'],,,Common,,,398550,({T}: Add {W}.),,
+Swamp,Magic Origins,ORI,263,2,,,['Land'],['Swamp'],,,Common,,,398507,({T}: Add {B}.),,
+Mountain,Magic Origins,ORI,266,1,,,['Land'],['Mountain'],,,Common,,,398510,({T}: Add {R}.),,
+Mountain,Magic Origins,ORI,268,1,,,['Land'],['Mountain'],,,Common,,,398425,({T}: Add {R}.),,
+Forest,Magic Origins,ORI,269,1,,,['Land'],['Forest'],,,Common,,,398421,({T}: Add {G}.),,
+Irrigated Farmland,Amonkhet,AKH,245,1,,,['Land'],"['Plains', 'Island']",,,Rare,,,426947,"({T}: Add {W} or {U}.)
+Irrigated Farmland enters the battlefield tapped.
+Cycling {2} ({2}, Discard this card: Draw a card.)",,
+Sunscorched Desert,Amonkhet,AKH,249,1,,,['Land'],['Desert'],,,Common,,,426951,"When Sunscorched Desert enters the battlefield, it deals 1 damage to target player or planeswalker.
+{T}: Add {C}.",The only relief in sight is a mirage.,
+Plains,Amonkhet,AKH,250,2,,,['Land'],['Plains'],,,Common,,,426952,({T}: Add {W}.),,
+Island,Amonkhet,AKH,251,1,,,['Land'],['Island'],,,Common,,,426953,({T}: Add {U}.),,
+Mountain,Amonkhet,AKH,253,1,,,['Land'],['Mountain'],,,Common,,,426955,({T}: Add {R}.),,
+,,MBS,86,1,,,,,,,,,,,,,
+,,MBS,61,1,,,,,,,,,,,,,
+,,MBS,2,12,,,,,,,,,,,,,
+,,ALA,230,1,,,,,,,,,,,,,
+,,ALA,232,2,,,,,,,,,,,,,
+,,ALA,233,2,,,,,,,,,,,,,
+,,ALA,234,2,,,,,,,,,,,,,
+,,ALA,237,1,,,,,,,,,,,,,
+,,ALA,240,1,,,,,,,,,,,,,
+,,ALA,243,2,,,,,,,,,,,,,
+,,ALA,244,2,,,,,,,,,,,,,
+,,ALA,247,1,,,,,,,,,,,,,
+,,ALA,248,1,,,,,,,,,,,,,
+,,ALA,249,2,,,,,,,,,,,,,
+,,M13,116,1,,,,,,,,,,,,,
+,,M13,111,1,,,,,,,,,,,,,
+,,M13,58,3,,,,,,,,,,,,,
+,,M13,60,1,,,,,,,,,,,,,
+,,M13,75,3,,,,,,,,,,,,,
+,,M13,51,1,,,,,,,,,,,,,
+,,M13,38,3,,,,,,,,,,,,,
+,,M13,24,2,,,,,,,,,,,,,
+,,M13,134,1,,,,,,,,,,,,,
+,,M13,155,5,,,,,,,,,,,,,
+,,FRF,89,1,,,,,,,,,,,,,
+,,FRF,61,1,,,,,,,,,,,,,
+,,FRF,88,1,,,,,,,,,,,,,
+,,FRF,68,1,,,,,,,,,,,,,
+,,FRF,86,1,,,,,,,,,,,,,
+,,FRF,60,1,,,,,,,,,,,,,
+,,FRF,85,1,,,,,,,,,,,,,
+,,FRF,73,1,,,,,,,,,,,,,
+,,DTK,104,1,,,,,,,,,,,,,
+,,DTK,115,1,,,,,,,,,,,,,
+,,DTK,122,1,,,,,,,,,,,,,
+,,DTK,109,1,,,,,,,,,,,,,
+,,DTK,105,1,,,,,,,,,,,,,
+,,DTK,119,1,,,,,,,,,,,,,
+,,DTK,110,1,,,,,,,,,,,,,
