@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+IGNORED_NAMES = ["Plains", "Mountain", "Swamp", "Forest", "Island"]
 COLLECTION = "/home/sztylet/Desktop/mtg/assistant_database/main.csv"
 df = pd.read_csv(
     filepath_or_buffer=COLLECTION,
@@ -15,7 +16,7 @@ df = pd.read_csv(
 cards_sum = df["Count"].sum()
 print(f"operation started with: {cards_sum} cards")
 
-selection_filter = df["Count"] > 4
+selection_filter = (df["Count"] > 4) & df["Name"].apply(lambda x: x not in IGNORED_NAMES)
 toomuchness_df = pd.DataFrame(df[selection_filter])
 selected_indexes = toomuchness_df.index
 interesting_columns = ["Count", "Name", "Edition", "Card Number"]
@@ -36,5 +37,5 @@ print(f"cards after split: {df_cards_sum} in main, {toomuchness_card_sum} in too
 assert cards_sum == df_cards_sum + toomuchness_card_sum
 
 
-toomuchness_df.to_csv(path_or_buf="/home/sztylet/Desktop/mtg/toomuchness.csv", index=False)
+toomuchness_df.to_csv(path_or_buf="/home/sztylet/Desktop/mtg/toomuchness2.csv", index=False)
 df.to_csv(path_or_buf="/home/sztylet/Desktop/mtg/main_after_split.csv", index=False)

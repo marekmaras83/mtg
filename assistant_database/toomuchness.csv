@@ -10,7 +10,7 @@ Count,Tradelist Count,Name,Foil,Textless,Promo,Signed,Edition,Condition,Language
 1,0,Lightwalker,,,,,Dragons of Tarkir,,English,24
 4,0,Misthoof Kirin,,,,,Dragons of Tarkir,,English,25
 3,0,Resupply,,,,,Dragons of Tarkir,,English,32
-6,0,Student of Ojutai,,,,,Dragons of Tarkir,,English,40
+2,0,Student of Ojutai,,,,,Dragons of Tarkir,,English,40
 3,0,Territorial Roc,,,,,Dragons of Tarkir,,English,43
 4,0,Ancient Carp,,,,,Dragons of Tarkir,,English,44
 1,0,Contradict,,,,,Dragons of Tarkir,,English,49
@@ -26,7 +26,6 @@ Count,Tradelist Count,Name,Foil,Textless,Promo,Signed,Edition,Condition,Language
 3,0,Marsh Hulk,,,,,Dragons of Tarkir,,English,109
 5,0,Mind Rot,,,,,Dragons of Tarkir,,English,110
 3,0,Reckless Imp,,,,,Dragons of Tarkir,,English,115
-1,0,Shambling Goblin,,,,,Dragons of Tarkir,,English,118
 3,0,Sibsig Icebreakers,,,,,Dragons of Tarkir,,English,119
 4,0,Silumgar Butcher,,,,,Dragons of Tarkir,,English,122
 3,0,Hardened Berserker,,,,,Dragons of Tarkir,,English,139
@@ -63,7 +62,6 @@ Count,Tradelist Count,Name,Foil,Textless,Promo,Signed,Edition,Condition,Language
 7,0,Standing Troops,,,,,Duel Decks: Elspeth vs. Kiora,,English,25
 5,0,Netcaster Spider,,,,,Duel Decks: Elspeth vs. Kiora,,English,49
 3,0,Time to Feed,,,,,Duel Decks: Elspeth vs. Kiora,,English,50
-1,0,Abzan Advantage,,,,,Fate Reforged,,English,2
 6,0,Abzan Runemark,,,,,Fate Reforged,,English,3
 6,0,Abzan Skycaptain,,,,,Fate Reforged,,English,4
 5,0,Aven Skirmisher,,,,,Fate Reforged,,English,6
@@ -102,7 +100,7 @@ Count,Tradelist Count,Name,Foil,Textless,Promo,Signed,Edition,Condition,Language
 2,0,Ambush Krotiq,,,,,Fate Reforged,,English,122
 2,0,Archers of Qarsi,,,,,Fate Reforged,,English,124
 6,0,Feral Krushok,,,,,Fate Reforged,,English,128
-6,0,Formless Nurturing,,,,,Fate Reforged,,English,129
+7,0,Formless Nurturing,,,,,Fate Reforged,,English,129
 1,0,Frontier Mastodon,,,,,Fate Reforged,,English,130
 9,0,Hunt the Weak,,,,,Fate Reforged,,English,133
 3,0,Map the Wastes,,,,,Fate Reforged,,English,134
@@ -112,16 +110,6 @@ Count,Tradelist Count,Name,Foil,Textless,Promo,Signed,Edition,Condition,Language
 6,0,Ethereal Ambush,,,,,Fate Reforged,,English,152
 4,0,Harsh Sustenance,,,,,Fate Reforged,,English,154
 4,0,War Flare,,,,,Fate Reforged,,English,158
-4,0,Plains,,,,,Fate Reforged,,English,176
-5,0,Plains,,,,,Fate Reforged,,English,177
-4,0,Island,,,,,Fate Reforged,,English,178
-4,0,Island,,,,,Fate Reforged,,English,179
-7,0,Swamp,,,,,Fate Reforged,,English,180
-8,0,Swamp,,,,,Fate Reforged,,English,181
-4,0,Mountain,,,,,Fate Reforged,,English,182
-4,0,Mountain,,,,,Fate Reforged,,English,183
-5,0,Forest,,,,,Fate Reforged,,English,184
-4,0,Forest,,,,,Fate Reforged,,English,185
 2,0,Zarichi Tiger,,,,,Gatecrash,,English,28
 4,0,Naturalize,,,,,Gatecrash,,English,127
 1,0,Feeling of Dread,,,,,Innistrad,,English,14
@@ -160,7 +148,7 @@ Count,Tradelist Count,Name,Foil,Textless,Promo,Signed,Edition,Condition,Language
 9,0,Lightning Talons,,,,,Magic 2014 Core Set,,English,144
 4,0,Razorfoot Griffin,,,,,Magic 2015 Core Set,,English,27
 4,0,Sungrace Pegasus,,,,,Magic 2015 Core Set,,English,38
-1,0,Carrion Crow,,,,,Magic 2015 Core Set,,English,88
+2,0,Carrion Crow,,,,,Magic 2015 Core Set,,English,88
 16,0,Child of Night,,,,,Magic 2015 Core Set,,English,90
 6,0,Eternal Thirst,,,,,Magic 2015 Core Set,,English,95
 12,0,Flesh to Dust,,,,,Magic 2015 Core Set,,English,98
