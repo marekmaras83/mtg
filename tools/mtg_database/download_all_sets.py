@@ -12,11 +12,13 @@ if __name__ == "__main__":
     parser.add_argument('workspace', type=Path, help='workspace path (should be same for other scripts)')
     args = parser.parse_args()
 
-    df_dict_data = defaultdict(list)
+    sets_dict = defaultdict(list)
     for mtg_set in MtgSet.all():
         for k, v in mtg_set.__dict__.items():
-            df_dict_data[k].append(v)
+            sets_dict[k].append(v)
 
     output_path = args.workspace / SETS_PATH
-    pd.DataFrame(df_dict_data).to_csv(output_path, index=False)
+    sets_df = pd.DataFrame(sets_dict)
+    sets_df.sort_values(by="name", inplace=True)
+    sets_df.to_csv(output_path, index=False)
     print(f"file saved to '{output_path}'")
