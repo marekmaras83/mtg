@@ -1,5 +1,7 @@
 import argparse
+import functools
 import logging
+import os
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -8,7 +10,7 @@ from mtgsdk import Card as MtgCard
 import pandas as pd
 import numpy as np
 
-from tools.mtg_database.commons import SETS_PATH, CARDS_DATA_DIR
+from tools.mtg_database.commons import SETS_PATH, CARDS_DATA_DIR, MERGED_CARDS_DATA_PATH
 
 
 def get_set_filename(set_name: str) -> str:
@@ -41,6 +43,16 @@ def download_set_cards(set_info: pd.Series, cards_data_workspace: Path):
     logging.info(f"'{set_data_path}' saved")
 
 
+def merge_into_single_file(source_dir: Path, output_csv_path: Path):
+    cards_per_set = []
+    for file in os.listdir(source_dir):
+        if file.endswith(".csv"):
+            cards_per_set.append(pd.read_csv(source_dir / file))
+    all_cards_df = functools.reduce(pd.DataFrame.append, cards_per_set)
+    all_cards_df.to_csv(output_csv_path, index=False)
+    logging.info(f"'{output_csv_path}' saved")
+
+
 def main(workspace: Path):
     cards_data_workspace = workspace / CARDS_DATA_DIR
     if not workspace.exists():
@@ -55,6 +67,9 @@ def main(workspace: Path):
     for i in range(num_of_sets):
         mtg_set = set_names_df.iloc[i]
         download_set_cards(mtg_set, cards_data_workspace)
+
+    logging.info("merging all data into single file...")
+    merge_into_single_file(source_dir=cards_data_workspace, output_csv_path=workspace/MERGED_CARDS_DATA_PATH)
 
 
 if __name__ == "__main__":
